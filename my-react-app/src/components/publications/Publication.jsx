@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Publication.css";
 
 const Publication = () => {
