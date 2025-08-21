@@ -1,0 +1,123 @@
+.Aca-container {
+  padding: 80px 50px;
+  background: #eaebe4;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.Aca-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Aca-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+}
+
+.Aca-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 14px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Aca-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.Aca-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 6px solid #4a90e2;
+}
+
+.Aca-card:nth-child(2) {
+  border-top-color: #50c878;
+}
+
+.Aca-card:nth-child(3) {
+  border-top-color: #ff7f50;
+}
+
+.Aca-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.Aca-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.Aca-card-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/*RESPONSIVE BREAKPOINTS */
+@media (max-width: 1024px) {
+  .Aca-title {
+    font-size: 28px;
+  }
+
+  .Aca-cards {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Aca-container {
+    padding: 40px 15px;
+  }
+
+  .Aca-title {
+    font-size: 24px;
+  }
+
+  .Aca-text {
+    font-size: 15px;
+  }
+
+  .Aca-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Aca-title {
+    font-size: 20px;
+  }
+
+  .Aca-text {
+    font-size: 14px;
+  }
+
+  .Aca-card-title {
+    font-size: 18px;
+  }
+
+  .Aca-card-text {
+    font-size: 14px;
+  }
+}

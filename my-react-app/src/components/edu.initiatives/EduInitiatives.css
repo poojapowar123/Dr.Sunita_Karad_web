@@ -1,0 +1,120 @@
+/* Section Styling */
+.eduInit-section {
+  background: linear-gradient(135deg, #ffffff, #f4f7fb);
+  padding: 40px 20px;
+  border-radius: 20px;
+  max-width: 100%;
+  /* margin: 50px auto; */
+  text-align: center;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.eduInitiatives-heading {
+  font-size: 34px;
+  color: #1e293b;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.eduInit-section > p {
+  font-size: 17px;
+  color: #475569;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto 50px auto;
+}
+
+/* Cards Container */
+.eduInit-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+
+/* Individual Card */
+.eduInit-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px 25px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gradient border on hover */
+.eduInit-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(135deg, #3b82f6, #9333ea, #f59e0b);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.eduInit-card:hover::before {
+  opacity: 1;
+}
+
+.eduInit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo/Icon */
+.card-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 22px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.eduInit-card:hover .card-logo {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Title */
+.card-title {
+  font-size: 22px;
+  color: #0f172a;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+/* Text */
+.card-text {
+  font-size: 15.5px;
+  color: #475569;
+  line-height: 1.7;
+  padding: 0 8px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .eduInit-container {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .eduInit-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eduInit-card {
+    max-width: 95%;
+  }
+}

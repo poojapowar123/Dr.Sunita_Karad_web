@@ -1,0 +1,127 @@
+.events-container {
+    text-align: center;
+    padding: 20px 20px;
+    background: linear-gradient(135deg, #8d8d8a, #c7c4bf);
+}
+
+.events-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #5f251a;
+    margin-bottom: 20px;
+}
+
+.events-desc {
+    font-size: 17px;
+    color: #130202;
+    max-width: 850px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+/* Wrapper for arrows + scroll */
+.events-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Scrollable container */
+.events-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    max-width: 80%;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.events-scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+/* Card */
+.events-card {
+    border-radius: 16px;
+background-color:whitesmoke;
+    padding: 20px;
+    min-width: 250px;
+    max-width: 450px;
+    flex-shrink: 0;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.events-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.events-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.events-card h3 {
+    font-size: 20px;
+    color: #c77d2f;
+    margin-bottom: 10px;
+}
+
+.events-card p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Arrows */
+.arrow {
+    background: #c77d2f;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    margin: 0 60px 0 60px;
+    /* top right bottom left */
+}
+
+.arrow:hover {
+    background: #a65e1c;
+}
+
+.arrow.left {
+    left: -40px;
+}
+
+.arrow.right {
+    right: -40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .arrow.left {
+        left: 10px;
+    }
+
+    .arrow.right {
+        right: 10px;
+    }
+
+    .events-card {
+        min-width: 260px;
+        max-width: 260px;
+    }
+}

@@ -1,0 +1,81 @@
+.about-section {
+    padding: 40px 20px;
+    /*Background image added here */
+    background: url("/public/assets/about-bg.webp") no-repeat center center/cover; 
+  
+    text-align: center;
+    color: white; /* text color changed for visibility */
+  }
+  
+  .about-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    /*changed to white for visibility on background */
+    color: #fff; 
+  }
+  
+  .about-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-card {
+    /* made background semi-transparent so background image is still visible */
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: left;
+    position: relative;
+  }
+  
+  .card-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card-bold {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .card-text {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .read-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .read-btn:hover {
+    color: #ca1919;
+    text-decoration: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

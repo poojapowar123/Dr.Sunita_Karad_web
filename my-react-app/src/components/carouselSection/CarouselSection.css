@@ -1,0 +1,147 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 20px; /* ⬅️ add padding so card doesn't touch edges */
+}
+
+/* background color */
+.carousel-section {
+  background: linear-gradient(135deg, #f0ebeb, #dee3e9);
+  padding: 60px 20px;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: 1400px;
+  text-align: center;
+}
+
+.carousel-section h1 {
+  color: #222;
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.carousel-section p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.carousel-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 0 0 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.carousel-text {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.carousel-text h5 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.carousel-text p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* dots button */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dot:hover {
+  background-color: #999;
+  transform: scale(1);
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/*RESPONSIVE BREAKPOINTS */
+@media (max-width: 1024px) {
+  .carousel-section h1 {
+    font-size: 24px;
+  }
+  .carousel-section p {
+    font-size: 15px;
+  }
+  .carousel-card img {
+    height: 260px; /* smaller image for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-section {
+    padding: 40px 15px;
+  }
+  .carousel-section h1 {
+    font-size: 22px;
+  }
+  .carousel-section p {
+    font-size: 14px;
+  }
+  .carousel-card {
+    max-width: 400px; /* narrower card */
+  }
+  .carousel-card img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-section {
+    padding: 30px 10px;
+  }
+  .carousel-section h1 {
+    font-size: 20px;
+  }
+  .carousel-text h5 {
+    font-size: 16px;
+  }
+  .carousel-text p {
+    font-size: 13px;
+  }
+  .carousel-card {
+    max-width: 100%;
+  }
+  .carousel-card img {
+    height: 180px;
+  }
+}

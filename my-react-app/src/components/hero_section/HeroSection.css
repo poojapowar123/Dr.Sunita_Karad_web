@@ -1,0 +1,133 @@
+/* .hero-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+  }
+  
+  .hero-text {
+    color: white;
+    z-index: 10;
+  }
+  
+  .hero-text h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+  } */
+  
+  /* .hero-profile img {
+    height: 280px;
+    border-radius: 10px;
+    border: 4px solid white;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+   */
+
+
+   .hero-container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+  }
+  
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;   /* move items to bottom */
+    height: 100%;
+    padding: 0 40px 20px;    /* add bottom padding */
+  }
+  
+  .hero-text {
+    color: white;
+    text-align: left;       /* align text to right */
+    z-index: 10;
+  }
+  
+  .hero-text h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+    padding-bottom: 20px; 
+  }
+  
+  /* Already done above, adding improvements */
+@media (max-width: 992px) {
+  .home-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 26px;
+  }
+
+  .home-content p {
+    font-size: 15px;
+  }
+
+  .home-image img {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+  /* .hero-profile img {
+    height: 220px;
+    border-radius: 10px;
+    border: 4px solid white;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+   */
