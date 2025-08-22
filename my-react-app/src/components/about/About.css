@@ -2,7 +2,6 @@
     padding: 40px 20px;
     /*Background image added here */
     background: url("/public/assets/about-bg.webp") no-repeat center center/cover; 
-  
     text-align: center;
     color: white; /* text color changed for visibility */
   }

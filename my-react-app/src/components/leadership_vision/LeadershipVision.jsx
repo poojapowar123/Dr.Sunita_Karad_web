@@ -18,7 +18,12 @@ export default function LeadershipVision() {
     <section className="leadership-section">
       <div className="leadership-container">
 
-        {/* Left Side Content */}
+  {/* Left Side Image */}
+        <div className="leadership-image">
+          <img src="assets/leadernvision.png" alt="Leadership" />
+        </div>
+
+        {/* Right  Side Content */}
         <div className="leadership-text">
           <h2>Leadership & Vision</h2>
 
@@ -41,10 +46,7 @@ export default function LeadershipVision() {
           </button>
         </div>
 
-        {/* Right Side Image */}
-        <div className="leadership-image">
-          <img src="assets/leadernvision.png" alt="Leadership" />
-        </div>
+      
       </div>
     </section>
   );

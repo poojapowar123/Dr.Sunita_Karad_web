@@ -1,8 +1,8 @@
 /* Section Wrapper */
 .leadership-section {
-    padding: 60px 20px;
-    background: #f9f9f9;
-    font-family: "Poppins", sans-serif;
+    padding: 40px 20px;
+    background: #f3e3d4;
+    
 }
 
 /* Container */
@@ -20,7 +20,7 @@
 /* Left Text Section */
 .leadership-text {
     flex: 1;
-    min-width: 300px;
+    /* min-width: 300px; */
 }
 
 .leadership-text h2 {
@@ -29,6 +29,7 @@
     color: #222;
     margin-bottom: 20px;
     position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .leadership-text h2::after {
@@ -41,6 +42,7 @@
 }
 
 .leadership-text p {
+    max-width: 800px;
     font-size: 1rem;
     line-height: 1.7;
     color: #555;
@@ -65,23 +67,23 @@
     font-weight: bold;
     cursor: pointer;
     padding: 0;
-  }
-  
-  .read-toggle:hover {
+}
+
+.read-toggle:hover {
     color: #ca1919;
     text-decoration: none;
-  }
+}
 
 /* Right Image Section */
 .leadership-image {
     flex: 1;
-    min-width: 280px;
+    min-width: 250px;
     text-align: center;
 }
 
 .leadership-image img {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -94,12 +96,11 @@
 /* Responsive Design */
 @media (max-width: 992px) {
     .leadership-container {
-        flex-direction: column-reverse;
         text-align: center;
     }
 
     .leadership-text h2::after {
-        margin: 8px auto 0;
+        margin: 5px auto 0;
     }
 
     .leadership-text {

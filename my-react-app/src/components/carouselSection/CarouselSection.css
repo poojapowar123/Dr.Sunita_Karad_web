@@ -2,17 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  padding: 0 20px; /* ⬅️ add padding so card doesn't touch edges */
 }
 
 /* background color */
 .carousel-section {
-  background: linear-gradient(135deg, #f0ebeb, #dee3e9);
-  padding: 60px 20px;
-  border-radius: 16px;
-  margin: 40px auto;
-  max-width: 1400px;
+background: linear-gradient(to bottom, #f0ebeb, #d6e0e7, #c5cdd6);
+  padding: 50px 20px;
+  /* margin: 40px auto; */
+  width: 100%;
   text-align: center;
 }
 
@@ -31,13 +28,14 @@
 }
 
 .carousel-card {
+
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #ffffff;
   padding: 0 0 25px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  max-width: 500px;
+  max-width: 650px;
   width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
@@ -45,7 +43,7 @@
 
 .carousel-card img {
   width: 100%;
-  height: 320px;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -80,18 +78,18 @@
   height: 10px;
   border-radius: 50%;
   border: none;
-  background-color: #ccc;
+  background-color: #7a7878;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 .dot:hover {
-  background-color: #999;
+  background-color: #649dbe;
   transform: scale(1);
 }
 
 .dot.active {
-  background-color: #333;
+  background-color: #385774;
 }
 
 /*RESPONSIVE BREAKPOINTS */
@@ -99,11 +97,14 @@
   .carousel-section h1 {
     font-size: 24px;
   }
+
   .carousel-section p {
     font-size: 15px;
   }
+
   .carousel-card img {
-    height: 260px; /* smaller image for tablets */
+    height: 260px;
+    /* smaller image for tablets */
   }
 }
 
@@ -111,15 +112,20 @@
   .carousel-section {
     padding: 40px 15px;
   }
+
   .carousel-section h1 {
     font-size: 22px;
   }
+
   .carousel-section p {
     font-size: 14px;
   }
+
   .carousel-card {
-    max-width: 400px; /* narrower card */
+    max-width: 400px;
+    /* narrower card */
   }
+
   .carousel-card img {
     height: 220px;
   }
@@ -129,18 +135,23 @@
   .carousel-section {
     padding: 30px 10px;
   }
+
   .carousel-section h1 {
     font-size: 20px;
   }
+
   .carousel-text h5 {
     font-size: 16px;
   }
+
   .carousel-text p {
     font-size: 13px;
   }
+
   .carousel-card {
     max-width: 100%;
   }
+
   .carousel-card img {
     height: 180px;
   }

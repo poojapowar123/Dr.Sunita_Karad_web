@@ -1,51 +1,75 @@
-// import React from "react";
-// import "./Navbar.css";
-
-// export default function Navbar() {
-//   return (
-//     <nav className="navbar">
-//       <ul>
-//         <li>Home</li>
-//         <li>About</li>
-//         <li>Academic</li>
-//         <li>Awards</li>
-//         <li>Conferences</li>
-//         <li>Educational</li>
-//         <li>Publications</li>
-//         <li>Contact</li>
-//       </ul>
-//     </nav>
-//   );
-// }
-
-import React, { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
+import React, { useState } from "react"; 
 import "./Navbar.css";
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const closeMenu = () => setOpen(false);
+
   return (
     <nav className="navbar">
       <div className="nav-container">
-        
-        {/* Desktop Menu */}
+        {/* Logo / Brand */}
+        {/* <div className="nav-logo">
+          Prof. Sunita M. Karad
+        </div> */}
+
+        {/* Navigation Links */}
         <ul className={`nav-links ${open ? "open" : ""}`}>
-          <li><a href="/">Home</a></li>
-          <li><a href="/About">About</a></li>
-          <li><a href="/Academic & Professional Experience">Academic & Professional Experience</a></li>
-          <li><a href="/Awards & Recognitions">Awards & Recognitions</a></li>
-          <li><a href="/Conferences & Events">Conferences & Events</a></li>
-          <li><a href="/Educational Initiatives">Educational Initiatives</a></li>
-          <li><a href="/Publications">Publications</a></li>
-          <li><a href="/Contact">Contact</a></li>
+          <li>
+            <ScrollLink to="home" smooth={true} duration={500} onClick={closeMenu}>
+              Home
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="about" smooth={true} duration={500} onClick={closeMenu}>
+              About
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="academics" smooth={true} duration={500} onClick={closeMenu}>
+              Academic & Professional Experience
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="awards" smooth={true} duration={500} onClick={closeMenu}>
+              Awards & Recognitions
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="conferences" smooth={true} duration={500} onClick={closeMenu}>
+              Conferences & Events
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="education" smooth={true} duration={500} onClick={closeMenu}>
+              Educational Initiatives
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="publications" smooth={true} duration={500} onClick={closeMenu}>
+              Publications
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="contact" smooth={true} duration={500} onClick={closeMenu}>
+              Contact
+            </ScrollLink>
+          </li>
         </ul>
 
-        {/* Hamburger */}
-        <div className="nav-toggle" onClick={() => setOpen(!open)}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
+        {/* Hamburger Menu */}
+        <button
+          className={`nav-toggle ${open ? "active" : ""}`}
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle navigation menu"
+        >
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
       </div>
     </nav>
   );

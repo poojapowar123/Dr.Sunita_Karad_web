@@ -1,9 +1,10 @@
 /* Section */
 .publication-section {
-  background: #ffffff;
+ background: linear-gradient(to bottom, #f0ebeb, #dae1e6, #a78e94);
   padding: 70px 20px;
   display: flex;
   justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Container */

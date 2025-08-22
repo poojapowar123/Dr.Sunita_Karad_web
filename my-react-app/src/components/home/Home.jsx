@@ -10,6 +10,16 @@ export default function Home() {
           src="/assets/sunita-karad.png"
           alt="Prof. Sunita M. Karad with Students"
         />
+
+        {/* Message below the image */}
+        <div className="home-image-msg">
+          <h3>Message from Dr. Karad...</h3>
+          <p>
+            Prof. Sunita M. Karad’s vision is to nurture talent, promote
+            innovation, and inspire a generation of students to achieve their
+            fullest potential through education and ethical leadership.
+          </p>
+        </div>
       </div>
 
       {/* Right Side - Content */}

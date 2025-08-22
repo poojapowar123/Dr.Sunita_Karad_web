@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./CarouselSection.css";
+import Awards from "./Awards";
+import Socialevent from "./Socialevent";
 
 const CarouselSection = ({ sectionTitle, sectionDesc, items }) => {
     const [current, setCurrent] = useState(0);
@@ -27,6 +29,7 @@ const CarouselSection = ({ sectionTitle, sectionDesc, items }) => {
 
 
     return (
+      <>
         <div className="carousel-section">
             <h1>{sectionTitle}</h1>
             <p>{sectionDesc}</p>
@@ -60,6 +63,7 @@ const CarouselSection = ({ sectionTitle, sectionDesc, items }) => {
                 ))}
             </div>
         </div>
+        </>
     );
 };
 

@@ -1,32 +1,7 @@
-/* .navbar {
-    background: white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    list-style: none;
-    padding: 16px;
-    margin: 0;
-    font-weight: 500;
-    color: #444;
-  }
-  
-  .navbar li {
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .navbar li:hover {
-    color: #e67e22; 
-  }
-   */
 
    /* Navbar Base */
 .navbar {
-  background: #ffffff;
+  background: #9c7962;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   padding: 12px 24px;
   position: sticky;
@@ -51,13 +26,13 @@
 
 .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: rgb(8, 0, 0);
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #0077b6;
+  color: #e9c153;
 }
 
 /* Hamburger */
@@ -75,7 +50,7 @@
   border-radius: 4px;
 }
 
-/* ✅ Mobile Responsive */
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;

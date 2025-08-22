@@ -1,4 +1,3 @@
-
 import "./Publication.css";
 
 const Publication = () => {
