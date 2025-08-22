@@ -1,6 +1,6 @@
 .footer {
-  background-color: #5c5151;
-  color: #fff;
+   background: #ddd3cb;
+  color: #362f2f;
   text-align: center;
   padding: 15px 10px; /* Reduced padding for less height */
 }
@@ -31,7 +31,7 @@
 }
 
 .social-icons a {
-  color: #fff;
+  color: #161313;
   transition: 0.3s;
   font-size: 1.5rem; /* Smaller icons */
 }

@@ -20,7 +20,7 @@ const Footer = () => {
           <FaFacebook />
         </a>
       </div>
-      <p className="footer-copy">© {new Date().getFullYear()} All Rights Reserved</p>
+      <p className="footer-copy">© {new Date().getFullYear()} All Rights Reserved By MIT University | Designed & Developed By Website Department</p>
     </footer>
   );
 };

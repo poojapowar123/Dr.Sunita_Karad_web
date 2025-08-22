@@ -1,7 +1,7 @@
 
    /* Navbar Base */
 .navbar {
-  background: #9c7962;
+  background: #ddd3cb;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   padding: 12px 24px;
   position: sticky;
@@ -32,7 +32,7 @@
 }
 
 .nav-links li a:hover {
-  color: #e9c153;
+  color: #076683;
 }
 
 /* Hamburger */

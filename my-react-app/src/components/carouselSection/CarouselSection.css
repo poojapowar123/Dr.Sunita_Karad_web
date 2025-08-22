@@ -7,7 +7,7 @@
 /* background color */
 .carousel-section {
 
-background: linear-gradient(to bottom, #f0ebeb, #d6e0e7, #c5cdd6); 
+background: linear-gradient(to bottom, #f0ebeb, #cbd4da, #c5b6b2); 
   padding: 60px 20px;
   /* margin: 40px auto; */
   width: 100%;
@@ -44,7 +44,7 @@ background: linear-gradient(to bottom, #f0ebeb, #d6e0e7, #c5cdd6);
 
 .carousel-card img {
   width: 100%;
-  height: 350px;
+  height: 450px;
   object-fit: cover;
 }
 

@@ -6,7 +6,7 @@
   gap: 40px;
   width: 100%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 20px;
 }
 
 /* Image Section */
@@ -26,14 +26,14 @@
 
 /* Image message */
 .home-image-msg {
-  text-align: center;  /* make text align responsive */
+  text-align: center; 
   margin-top: 15px;
 }
 
 .home-image-msg h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
-  color: #20110a;
+  color: #180a02;
   line-height: 1.4;
   margin: 10px 0;
 }
@@ -42,14 +42,15 @@
   font-size: 16px;
   line-height: 1.7;
   margin: 10px 0 20px 0;
-  color: #0e0401;
+  padding: 0 34px 0 34px;
+  color: #220c08;
 }
 
 /* Text Content */
 .home-content h1 {
   font-size: 32px;
   font-weight: 700;
-  color: #333;
+  color: #200707;
   line-height: 1.4;
 }
 
