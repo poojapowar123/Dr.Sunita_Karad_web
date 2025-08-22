@@ -4,7 +4,6 @@
   padding: 70px 20px;
   display: flex;
   justify-content: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Container */
@@ -40,7 +39,7 @@
   font-size: 32px;
   color: #1e293b;
   margin-bottom: 18px;
-  font-weight: 700;
+  font-weight: 650;
 }
 
 .publication-content p {

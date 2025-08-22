@@ -1,19 +1,19 @@
 .events-container {
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
     background: linear-gradient(135deg, #8d8d8a, #c7c4bf);
 }
 
 .events-title {
     font-size: 32px;
-    font-weight: 600;
-    color: #5f251a;
+    font-weight: 650;
+    color: #440c03;
     margin-bottom: 20px;
 }
 
 .events-desc {
     font-size: 17px;
-    color: #130202;
+    color: #3d1d13;
     max-width: 850px;
     margin: 0 auto 50px;
     line-height: 1.8;
